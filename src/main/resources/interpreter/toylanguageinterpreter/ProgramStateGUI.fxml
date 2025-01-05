@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="638.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interpreter.toylanguageinterpreter.ProgramStateGUIController">
+   <children>
+      <GridPane layoutX="-0.5" layoutY="1.0" prefHeight="563.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <GridPane gridLinesVisible="true" prefHeight="573.0" prefWidth="873.0" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                  <RowConstraints maxHeight="126.4" minHeight="10.0" prefHeight="18.6" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="318.2" minHeight="10.0" prefHeight="215.8" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="104.0" minHeight="10.0" prefHeight="20.80000000000001" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="185.39999999999998" minHeight="10.0" prefHeight="153.2" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="111.39999999999998" minHeight="10.0" prefHeight="19.399999999999977" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="144.60000000000002" minHeight="10.0" prefHeight="141.8" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <TableView fx:id="heapTableView" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn fx:id="addressColumn" editable="false" prefWidth="213.39998769760132" resizable="false" text="Address" />
+                      <TableColumn fx:id="heapValueColumn" editable="false" prefWidth="217.79998779296875" text="Value" />
+                    </columns>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </TableView>
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="440.0" text="Heap Table">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="439.0" text="Output" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="outListView" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="3">
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </ListView>
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="443.0" text="Symbol Table" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="symbolTableView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <columns>
+                      <TableColumn fx:id="variableNameColumn" editable="false" prefWidth="217.00002765655518" resizable="false" text="Variable Name" />
+                      <TableColumn fx:id="symbolTableValueColumn" editable="false" prefWidth="212.6000518798828" text="Value" />
+                    </columns>
+                     <padding>
+                        <Insets left="5.0" right="5.0" />
+                     </padding>
+                  </TableView>
+                  <Label alignment="CENTER" prefHeight="27.0" prefWidth="441.0" text="Program State IDs" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="prgStateIDsListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label alignment="CENTER" prefHeight="22.0" prefWidth="438.0" text="File Table" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="fileTableListView" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="5" />
+                  <Label alignment="CENTER" prefHeight="50.0" prefWidth="434.0" text="Execution Stack" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ListView fx:id="exeStackListView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+               </children>
+            </GridPane>
+            <Pane>
+               <children>
+                  <Label layoutX="225.0" layoutY="4.0" text="Number of Program States: ">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="prgStatesNumberTxt" editable="false" layoutX="384.0" prefHeight="26.0" prefWidth="174.0" />
+               </children>
+            </Pane>
+            <Pane GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="runOneStepButton" layoutX="358.0" layoutY="4.0" mnemonicParsing="false" onAction="#onRunOneStepButtonClick" prefHeight="26.0" prefWidth="158.0" text="Run One Step" />
+               </children>
+            </Pane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -54,7 +54,6 @@ public class Repository<T> implements IRepository<T> {
         logFile.println("Program Id: " + prg.getId());
         logFile.println("ExeStack:");
         List<IStmt> stmts = prg.getExeStack().getInOrderStmts();
-        //List<IStmt> stmts = prg.getExeStack().toList();
         for (IStmt stmt : stmts) {
             if(stmt!=null)
                 logFile.println(stmt);
@@ -82,4 +81,12 @@ public class Repository<T> implements IRepository<T> {
         logFile.println("~~~~~~~~~~~~~~~~~~~~~\n");
         logFile.close();
     }
+
+    @Override
+    public T getPrgState(int index) throws MyException {
+        if(index<0 || index>=repo.size())
+            throw new MyException("Invalid index");
+        return repo.get(index);
+    }
+
 }

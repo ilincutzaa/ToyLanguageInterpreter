@@ -5,6 +5,7 @@ import interpreter.toylanguageinterpreter.Repository.IRepository;
 import interpreter.toylanguageinterpreter.Utils.*;
 import interpreter.toylanguageinterpreter.Model.PrgState;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -75,7 +76,6 @@ public class Service {
         if(prgList.isEmpty() && repo.getSize() == 1) {
             globalSymTable.putAll(repo.getPrgList().getFirst().getSymTable());
             MyIHeap<Value> heap = repo.getPrgList().getFirst().getHeapTable();
-            var alladdr = getAllAddr(globalSymTable.values(), heap);
             heap.setContent(GarbageCollector(getAllAddr(globalSymTable.values(), heap), heap));
             repo.logPrgStateExec(repo.getPrgList().getFirst());
         }
@@ -106,4 +106,39 @@ public class Service {
         return symTblAddr.stream().toList();
     }
 
+    public IRepository<PrgState> getRepo() {
+        return repo;
+    }
+
+    public List<Integer> getPrgIds(){
+        List<Integer> prgIds = new ArrayList<>();
+        for(PrgState prg : repo.getPrgList()){
+            prgIds.add(prg.getId());
+        }
+        return prgIds;
+    }
+
+    public void runOneStep() throws MyException {
+        List<PrgState> prgList = removeCompletedPrg(repo.getPrgList());
+
+        if(prgList.isEmpty()) {
+            executor.shutdownNow();
+            throw new MyException("No more prg states to run. Program has finished.");
+        }
+        MyIDictionary<String, Value> globalSymTable = new MyDictionary<>();
+
+        for(PrgState prg : prgList)
+            globalSymTable.putAll(prg.getSymTable());
+
+        MyIHeap<Value> heap = prgList.getFirst().getHeapTable();
+        heap.setContent(GarbageCollector(getAllAddr(globalSymTable.values(), heap), heap));
+
+        try {
+            oneStepForAllPrg(prgList);
+        } catch (InterruptedException e) {
+            throw new MyException(e.getMessage());
+        }
+
+        repo.setPrgList(prgList);
+    }
 }
