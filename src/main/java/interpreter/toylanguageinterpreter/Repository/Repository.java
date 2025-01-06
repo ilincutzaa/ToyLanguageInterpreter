@@ -15,6 +15,7 @@ import java.util.Set;
 public class Repository<T> implements IRepository<T> {
     private final List<T> repo;
     String logFilePath;
+    private static int maxIndex = 0;
     public Repository(String logFilePath) {
         repo = new ArrayList<>();
         this.logFilePath = logFilePath;
@@ -23,6 +24,7 @@ public class Repository<T> implements IRepository<T> {
     @Override
     public void add(T state) {
         repo.add(state);
+        maxIndex++;
     }
 
 
@@ -46,7 +48,7 @@ public class Repository<T> implements IRepository<T> {
     public void logPrgStateExec(PrgState prg) throws MyException {
         PrintWriter logFile;
         try {
-            logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
+            logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, false)));
         } catch(IOException e) {
             throw new MyException(e.getMessage());
         }
@@ -82,11 +84,5 @@ public class Repository<T> implements IRepository<T> {
         logFile.close();
     }
 
-    @Override
-    public T getPrgState(int index) throws MyException {
-        if(index<0 || index>=repo.size())
-            throw new MyException("Invalid index");
-        return repo.get(index);
-    }
 
 }

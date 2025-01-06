@@ -151,4 +151,10 @@ public class Service {
         return getRepo().getPrgList().getFirst().getHeapTable().entrySet();
     }
 
+    public PrgState getPrgState(int id) throws MyException{
+        for(PrgState prg: repo.getPrgList())
+            if(prg.getId() == id)
+                return prg;
+        throw new MyException("No prg state with id " + id);
+    }
 }

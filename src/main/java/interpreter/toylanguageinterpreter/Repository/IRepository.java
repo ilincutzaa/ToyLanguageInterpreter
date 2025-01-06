@@ -11,5 +11,4 @@ public interface IRepository<T> {
     void setPrgList(List<T> prgList);
     int getSize();
     void logPrgStateExec(PrgState prgState) throws MyException;
-    T getPrgState(int index) throws MyException;
 }

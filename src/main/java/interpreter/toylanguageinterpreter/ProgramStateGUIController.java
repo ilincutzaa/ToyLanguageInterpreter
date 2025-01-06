@@ -9,10 +9,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.control.cell.PropertyValueFactory;
-
 import java.util.Map;
-import java.util.Set;
 
 public class ProgramStateGUIController {
     @FXML
@@ -58,10 +55,6 @@ public class ProgramStateGUIController {
 
     private int currentProgramStateID;
 
-    public int getCurrentProgramStateID() {
-        return currentProgramStateID;
-    }
-
     public void setCurrentProgramStateID(int currentProgramStateID) {
         this.currentProgramStateID = currentProgramStateID;
     }
@@ -84,20 +77,48 @@ public class ProgramStateGUIController {
         symbolTableView.setItems(symbolTableData);
         initializeHeapTableView();
         initializeSymbolTableView();
+
+        prgStateIDsListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue != null) {
+                setCurrentProgramStateID(newValue);
+                refreshGUIMini();
+            }
+        });
+    }
+
+    private void refreshGUIMini() {
+        try {
+            refreshExeStackList();
+        } catch (MyException e) {
+            if(!e.getMessage().equals("Program is finished"))
+                e.printStackTrace();
+        }
+        try {
+            refreshSymbolTable();
+        } catch (MyException e) {
+            if(!e.getMessage().equals("Program is finished"))
+                e.printStackTrace();
+        }
     }
 
     public void refreshGUI() {
         refreshPrgStatesNumberTxt();
         try {
             refreshExeStackList();
-        } catch (MyException e) {}
+        } catch (MyException e) {
+            if(!e.getMessage().equals("Program is finished"))
+                e.printStackTrace();
+        }
         refreshPrgStateIDsList();
         refreshOutList();
         refreshFileTableList();
         refreshHeapTable();
         try {
             refreshSymbolTable();
-        } catch (MyException e) {}
+        } catch (MyException e) {
+            if(!e.getMessage().equals("Program is finished"))
+                e.printStackTrace();
+        }
     }
 
     @FXML
@@ -113,10 +134,11 @@ public class ProgramStateGUIController {
 
     private void refreshExeStackList() throws MyException {
         if (service.getPrgIds().contains(currentProgramStateID)) {
-            MyIStack<IStmt> exeStk = service.getRepo().getPrgState(currentProgramStateID).getExeStack();
+            MyIStack<IStmt> exeStk = service.getPrgState(currentProgramStateID).getExeStack();
             exeStackListData.setAll(exeStk.getInOrderStmts());
         }
-        throw new MyException("Program is finished");
+        else
+            throw new MyException("Program is finished");
     }
 
     private void refreshPrgStateIDsList() {
@@ -159,9 +181,10 @@ public class ProgramStateGUIController {
 
     private void refreshSymbolTable() throws MyException {
         if (service.getPrgIds().contains(currentProgramStateID)) {
-            MyIDictionary<String, Value> symTbl = service.getRepo().getPrgState(currentProgramStateID).getSymTable();
+            MyIDictionary<String, Value> symTbl = service.getPrgState(currentProgramStateID).getSymTable();
             symbolTableData.setAll(symTbl.entrySet());
         }
-        throw new MyException("Prg is finished");
+        else
+            throw new MyException("Program is finished");
     }
 }

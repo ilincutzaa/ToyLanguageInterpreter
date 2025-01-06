@@ -103,7 +103,7 @@ public class ProgramStateGuiMain extends Application {
             MyIList<Value> output = new MyList<>();
             MyIFileTable<String, BufferedReader> filetbl = new MyFileTable<>();
             MyIHeap<Value> heap = new MyHeap<>();
-            PrgState prgState = new PrgState(stack, symtbl, output, prg, filetbl, heap);
+            PrgState prgState = new PrgState(stack, symtbl, output, prg1, filetbl, heap);
             IRepository<PrgState> repo = new Repository<PrgState>("D:\\Java projects\\ToyLanguageInterpreter\\src\\main\\java\\interpreter\\toylanguageinterpreter\\log.txt");
             repo.add(prgState);
             Service serv = new Service(repo);
