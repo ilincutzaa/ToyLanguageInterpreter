@@ -1,39 +1,95 @@
 package interpreter.toylanguageinterpreter;
 
-/*
-first create a fxml file, then in the respective controller, input manually the links to the fxml file, not forgetting to put the @FXML mention before each object
-
- */
-
 import interpreter.toylanguageinterpreter.Model.Expression.*;
+import interpreter.toylanguageinterpreter.Model.PrgState;
 import interpreter.toylanguageinterpreter.Model.Statement.*;
-import interpreter.toylanguageinterpreter.Model.Type.BoolType;
-import interpreter.toylanguageinterpreter.Model.Type.IntType;
-import interpreter.toylanguageinterpreter.Model.Type.RefType;
-import interpreter.toylanguageinterpreter.Model.Type.StringType;
+import interpreter.toylanguageinterpreter.Model.Type.*;
 import interpreter.toylanguageinterpreter.Model.Value.BoolValue;
 import interpreter.toylanguageinterpreter.Model.Value.IntValue;
 import interpreter.toylanguageinterpreter.Model.Value.StringValue;
+import interpreter.toylanguageinterpreter.Model.Value.Value;
+import interpreter.toylanguageinterpreter.Repository.IRepository;
+import interpreter.toylanguageinterpreter.Repository.Repository;
+import interpreter.toylanguageinterpreter.Service.Service;
+import interpreter.toylanguageinterpreter.Utils.*;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
-
+import javafx.stage.Stage;
+import java.io.BufferedReader;
+import java.io.IOException;
 
 
 public class ProgramListGUIController {
     @FXML
     private ListView<IStmt> programListView;
 
+    public void setLogFilePath(String logFilePath) {
+        this.logFilePath = logFilePath;
+    }
+
+    private String logFilePath;
+
+
+    @FXML
+    protected void onLoadButtonClicked(){
+        IStmt prg = programListView.getSelectionModel().getSelectedItem();
+        MyIDictionary<String, Type> typeEnv = new MyDictionary<>();
+        try {
+            prg.typeCheck(typeEnv);
+            MyIStack<IStmt> stack = new MyStack<>();
+            MyIDictionary<String, Value> symtbl = new MyDictionary<>();
+            MyIList<Value> output = new MyList<>();
+            MyIFileTable<String, BufferedReader> filetbl = new MyFileTable<>();
+            MyIHeap<Value> heap = new MyHeap<>();
+            PrgState prgState = new PrgState(stack, symtbl, output, prg, filetbl, heap);
+            IRepository<PrgState> repo = new Repository<>(logFilePath);
+            repo.add(prgState);
+            Service serv = new Service(repo);
+
+            FXMLLoader fxmlLoader = new FXMLLoader(ProgramListGUIMain.class.getResource("ProgramStateGUI.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+            ProgramStateGUIController ctr = fxmlLoader.getController();
+
+            ctr.setService(serv);
+            ctr.setCurrentProgramStateID(serv.getPrgIds().getFirst());
+            ctr.refreshGUI();
+
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.setTitle("Program State");
+            stage.show();
+
+
+        } catch (MyException e) {
+            errorAlert("Type Checker returned an error: " + e.getMessage());
+        } catch (IOException e) {
+            errorAlert(e.getMessage());
+        }
+    }
+
+    private void errorAlert(String message) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setContentText(message);
+        alert.showAndWait();
+    }
 
     @FXML
     public void initialize() {
         programListView.setItems(getProgramList());
         programListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
-        programListView.getSelectionModel().selectIndices(1);
-        programListView.getFocusModel().focus(1);
+        programListView.getSelectionModel().selectIndices(0);
+        programListView.getFocusModel().focus(0);
     }
+
+
 
     private ObservableList<IStmt> getProgramList() {
         //int v; v=2;Print(v) is represented as:
@@ -151,4 +207,5 @@ public class ProgramListGUIController {
         ObservableList<IStmt> programList = FXCollections.observableArrayList(ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, ex11, ex12, ex13, ex14);
         return programList;
     }
+
 }

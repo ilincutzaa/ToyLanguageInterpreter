@@ -23,6 +23,8 @@ public class ProgramListGUIMain extends Application {
                 throw new MyException(e.getMessage());
             }
             Scene scene = new Scene(fxmlLoader.load());
+            ProgramListGUIController ctr = fxmlLoader.getController();
+            ctr.setLogFilePath(logFilePath);
             primaryStage.setScene(scene);
             primaryStage.setTitle("Program List");
             primaryStage.show();

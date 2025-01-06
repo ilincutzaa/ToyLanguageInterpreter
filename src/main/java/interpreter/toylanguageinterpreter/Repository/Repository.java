@@ -48,7 +48,7 @@ public class Repository<T> implements IRepository<T> {
     public void logPrgStateExec(PrgState prg) throws MyException {
         PrintWriter logFile;
         try {
-            logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, false)));
+            logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)));
         } catch(IOException e) {
             throw new MyException(e.getMessage());
         }
@@ -82,6 +82,11 @@ public class Repository<T> implements IRepository<T> {
         }
         logFile.println("~~~~~~~~~~~~~~~~~~~~~\n");
         logFile.close();
+    }
+
+    @Override
+    public String getLogFilePath() {
+        return logFilePath;
     }
 
 

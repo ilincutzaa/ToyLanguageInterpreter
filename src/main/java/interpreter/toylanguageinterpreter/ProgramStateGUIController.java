@@ -66,6 +66,7 @@ public class ProgramStateGUIController {
     private final ObservableList<String> fileTableListData = FXCollections.observableArrayList();
     private final ObservableList<Map.Entry<AtomicIntegerKey, Value>> heapTableData = FXCollections.observableArrayList();
 
+    private Integer selectedProgramStateID;
 
     @FXML
     public void initialize() {
@@ -81,6 +82,7 @@ public class ProgramStateGUIController {
         prgStateIDsListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
                 setCurrentProgramStateID(newValue);
+                selectedProgramStateID = newValue;
                 refreshGUIMini();
             }
         });
@@ -143,6 +145,8 @@ public class ProgramStateGUIController {
 
     private void refreshPrgStateIDsList() {
         prgStateIDsListData.setAll(service.getPrgIds());
+        if (selectedProgramStateID != null && prgStateIDsListData.contains(selectedProgramStateID))
+            prgStateIDsListView.getSelectionModel().select(selectedProgramStateID);
     }
 
     private void refreshOutList() {
