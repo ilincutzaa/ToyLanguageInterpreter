@@ -12,4 +12,5 @@ public interface MyIFileTable<K,V> {
     Set<Map.Entry<K,V>> entrySet();
     void remove(K key);
     Collection<V> values();
+    Set<K> keySet();
 }

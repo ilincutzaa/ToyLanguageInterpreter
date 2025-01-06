@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="638.0" prefWidth="873.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interpreter.toylanguageinterpreter.ProgramStateGUIController">
+<AnchorPane prefHeight="638.0" prefWidth="888.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interpreter.toylanguageinterpreter.ProgramStateGUIController">
    <children>
       <GridPane layoutX="-0.5" layoutY="1.0" prefHeight="563.0" prefWidth="782.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <columnConstraints>
@@ -33,7 +33,7 @@
                <children>
                   <TableView fx:id="heapTableView" prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="1">
                     <columns>
-                      <TableColumn fx:id="addressColumn" editable="false" prefWidth="213.39998769760132" resizable="false" text="Address" />
+                      <TableColumn fx:id="heapAddressColumn" editable="false" prefWidth="213.39998769760132" resizable="false" text="Address" />
                       <TableColumn fx:id="heapValueColumn" editable="false" prefWidth="217.79998779296875" text="Value" />
                     </columns>
                      <padding>
@@ -62,8 +62,8 @@
                   </Label>
                   <TableView fx:id="symbolTableView" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
                     <columns>
-                      <TableColumn fx:id="variableNameColumn" editable="false" prefWidth="217.00002765655518" resizable="false" text="Variable Name" />
-                      <TableColumn fx:id="symbolTableValueColumn" editable="false" prefWidth="212.6000518798828" text="Value" />
+                      <TableColumn fx:id="symbolNameColumn" editable="false" prefWidth="217.00002765655518" resizable="false" text="Variable Name" />
+                      <TableColumn fx:id="symbolValueColumn" editable="false" prefWidth="212.6000518798828" text="Value" />
                     </columns>
                      <padding>
                         <Insets left="5.0" right="5.0" />

@@ -54,4 +54,9 @@ public class MyFileTable<K,V> implements MyIFileTable<K,V>{
     public Collection<V> values(){
         return table.values();
     }
+
+    @Override
+    public Set<K> keySet(){
+        return table.keySet();
+    }
 }

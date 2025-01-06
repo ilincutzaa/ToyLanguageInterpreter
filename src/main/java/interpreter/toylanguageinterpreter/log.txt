@@ -1,15 +1,12 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-int v
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
 
@@ -23,15 +20,12 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-int v
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
 
@@ -45,15 +39,12 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-int v
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
 
@@ -67,17 +58,14 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
@@ -89,17 +77,14 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
@@ -111,17 +96,14 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
@@ -133,17 +115,14 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
@@ -155,611 +134,413 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
-ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
-
-SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
-
-Out:
-
-FileTable:
-
-HeapTable:
-1 --> 22
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
-ExeStack:
-Print(v)
-Print(v)
-
-SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
-
-Out:
-
-FileTable:
-
-HeapTable:
-1 --> 22
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
 ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
-ExeStack:
-Print(v)
-Print(v)
-
-SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
-
-Out:
-
-FileTable:
-
-HeapTable:
-1 --> 22
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
 ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
+20
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
-ExeStack:
-Print(v)
-Print(v)
-
-SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
-
-Out:
-
-FileTable:
-
-HeapTable:
-1 --> 22
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
 ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
-ExeStack:
-Print(v)
-
-SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
-
-Out:
-10
-
-FileTable:
-
-HeapTable:
-1 --> 30
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
 ExeStack:
-v = 32
-Print(rH(a))
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
-ExeStack:
-Print(v)
-
-SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
-
-Out:
-10
-
-FileTable:
-
-HeapTable:
-1 --> 30
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
 ExeStack:
-v = 32
-Print(rH(a))
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
-ExeStack:
-
-SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
-
-Out:
-10
-10
-
-FileTable:
-
-HeapTable:
-1 --> 30
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
-ExeStack:
-v = 32
-Print(rH(a))
-
-SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
-
-Out:
-10
-10
-
-FileTable:
-
-HeapTable:
-1 --> 30
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
-ExeStack:
-v = 32
-Print(rH(a))
-
-SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
-
-Out:
-10
-10
-
-FileTable:
-
-HeapTable:
-1 --> 30
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
 ExeStack:
-Print(rH(a))
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 32
+v --> RefValue{address=0, locationType=int}
 
 Out:
-10
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-Print(rH(a))
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 32
+v --> RefValue{address=0, locationType=int}
 
 Out:
-10
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 32
+v --> RefValue{address=0, locationType=int}
 
 Out:
-10
-10
-30
 
 FileTable:
 
 HeapTable:
-1 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-int v
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
@@ -771,844 +552,774 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-int v
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-int v
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
+20
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-v = 32
-Print(rH(a))
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-v = 32
-Print(rH(a))
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-v = 32
-Print(rH(a))
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-v = 32
-Print(rH(a))
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
-10
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-Print(rH(a))
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 32
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
-10
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
-10
-10
+20
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-Print(rH(a))
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 32
 
 Out:
-10
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
 
 Out:
-10
-10
-10
-30
 
 FileTable:
 
 HeapTable:
-1 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 32
 
 Out:
-10
-10
-10
-30
 
 FileTable:
 
 HeapTable:
-1 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-int v
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
@@ -1620,18 +1331,14 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-int v
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
@@ -1643,18 +1350,14 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-int v
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
@@ -1666,18 +1369,14 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
@@ -1689,758 +1388,704 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Ref(int) a
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-v --> 0
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-v = 10
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 0
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-new(a, 22)
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=0, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-fork(WriteHeap(a, 30);
-v = 32;
-Print(rH(a)))
-Print(v)
-Print(v)
-Print(v)
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
+20
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
-Print(v)
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
-Print(v)
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
-Print(v)
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=0, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-WriteHeap(a, 30)
-v = 32
-Print(rH(a))
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=1, locationType=int}
 
 Out:
 
 FileTable:
 
 HeapTable:
-1 --> 22
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-v = 32
-Print(rH(a))
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-v = 32
-Print(rH(a))
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-v = 32
-Print(rH(a))
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
-Print(v)
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-v = 32
-Print(rH(a))
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-Print(rH(a))
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 32
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-Print(v)
+new(v, 30)
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
 
 Out:
-10
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
-Print(rH(a))
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 32
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
-10
-10
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
+Print(rH(rH(a)))
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 10
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
-10
-10
-10
-30
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 1
+Program Id: 0
 ExeStack:
 
 SymTable:
-a --> RefValue{address=1, locationType=int}
-v --> 32
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
 
 Out:
-10
-10
-10
-30
+20
 
 FileTable:
 
 HeapTable:
-1 --> 30
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -3091,6 +2736,297 @@ FileTable:
 
 HeapTable:
 1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -5041,6 +4977,5254 @@ FileTable:
 
 HeapTable:
 1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+30
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+30
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+30
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int v
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) a
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+v = 10
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 0
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, 22)
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=0, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(a, 30);
+v = 32;
+Print(rH(a)))
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(a, 30)
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 22
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+v = 32
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 10
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(a))
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+v --> 32
+
+Out:
+10
+30
+
+FileTable:
+
+HeapTable:
+1 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+string varf
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+string varf
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+string varf
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> 
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> 
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> 
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> 
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 0
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 0
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 0
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 0
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+2
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+2
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@42699bc2
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+2
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+string varf
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+string varf
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+string varf
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> 
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> 
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> 
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+varf = D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> 
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 0
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 0
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 0
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 0
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 15
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+2
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+CloseRFile(varf)
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+2
+
+FileTable:
+D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in --> java.io.BufferedReader@61ed5316
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+
+SymTable:
+varf --> D:\Java projects\ToyLanguageInterpreter\src\main\java\interpreter\toylanguageinterpreter\test.in
+varc --> 2
+
+Out:
+15
+2
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
+
+Out:
+20
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
+
+Out:
+20
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 20)
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(Ref(int)) a
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(a, v)
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=0, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v, 30)
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=1, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(rH(rH(a)))
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+
+SymTable:
+a --> RefValue{address=2, locationType=Ref(int)}
+v --> RefValue{address=3, locationType=int}
+
+Out:
+20
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> RefValue{address=1, locationType=int}
+3 --> 30
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~

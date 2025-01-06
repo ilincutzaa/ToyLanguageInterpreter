@@ -3,15 +3,16 @@ package interpreter.toylanguageinterpreter;
 import interpreter.toylanguageinterpreter.Model.Statement.IStmt;
 import interpreter.toylanguageinterpreter.Model.Value.Value;
 import interpreter.toylanguageinterpreter.Service.Service;
-import interpreter.toylanguageinterpreter.Utils.AtomicIntegerKey;
-import interpreter.toylanguageinterpreter.Utils.MyException;
-import interpreter.toylanguageinterpreter.Utils.MyIStack;
-import interpreter.toylanguageinterpreter.Wrappers.MyIStackWrapper;
+import interpreter.toylanguageinterpreter.Utils.*;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 
 import java.util.Map;
+import java.util.Set;
 
 public class ProgramStateGUIController {
     @FXML
@@ -20,12 +21,25 @@ public class ProgramStateGUIController {
     @FXML
     public TableView<Map.Entry<AtomicIntegerKey, Value>> heapTableView;
     @FXML
+    public TableColumn<Map.Entry<AtomicIntegerKey, Value>, String> heapAddressColumn;
+    @FXML
+    public TableColumn<Map.Entry<AtomicIntegerKey, Value>, String> heapValueColumn;
+
+
+    @FXML
     public ListView<Value> outListView;
     @FXML
     public ListView<String> fileTableListView;
 
+
     @FXML
-    public TableView symbolTableView;
+    public TableView<Map.Entry<String, Value>> symbolTableView;
+    @FXML
+    public TableColumn<Map.Entry<String, Value>, String> symbolNameColumn;
+    @FXML
+    public TableColumn<Map.Entry<String, Value>, String> symbolValueColumn;
+
+
     @FXML
     public ListView<Integer> prgStateIDsListView;
     @FXML
@@ -52,15 +66,38 @@ public class ProgramStateGUIController {
         this.currentProgramStateID = currentProgramStateID;
     }
 
+    private final ObservableList<IStmt> exeStackListData = FXCollections.observableArrayList();
+    private final ObservableList<Map.Entry<String, Value>> symbolTableData = FXCollections.observableArrayList();
+    private final ObservableList<Integer> prgStateIDsListData = FXCollections.observableArrayList();
+    private final ObservableList<Value> outListData = FXCollections.observableArrayList();
+    private final ObservableList<String> fileTableListData = FXCollections.observableArrayList();
+    private final ObservableList<Map.Entry<AtomicIntegerKey, Value>> heapTableData = FXCollections.observableArrayList();
+
 
     @FXML
     public void initialize() {
+        prgStateIDsListView.setItems(prgStateIDsListData);
+        exeStackListView.setItems(exeStackListData);
+        outListView.setItems(outListData);
+        fileTableListView.setItems(fileTableListData);
+        heapTableView.setItems(heapTableData);
+        symbolTableView.setItems(symbolTableData);
+        initializeHeapTableView();
+        initializeSymbolTableView();
     }
 
     public void refreshGUI() {
-        updatePrgStatesNumberTxt();
-        exeStackListView.setItems(getExeStackList());
-        prgStateIDsListView.setItems(getPrgStateIDsList());
+        refreshPrgStatesNumberTxt();
+        try {
+            refreshExeStackList();
+        } catch (MyException e) {}
+        refreshPrgStateIDsList();
+        refreshOutList();
+        refreshFileTableList();
+        refreshHeapTable();
+        try {
+            refreshSymbolTable();
+        } catch (MyException e) {}
     }
 
     @FXML
@@ -74,21 +111,57 @@ public class ProgramStateGUIController {
     }
 
 
-    private ObservableList<IStmt> getExeStackList() {
+    private void refreshExeStackList() throws MyException {
         if (service.getPrgIds().contains(currentProgramStateID)) {
             MyIStack<IStmt> exeStk = service.getRepo().getPrgState(currentProgramStateID).getExeStack();
-            MyIStackWrapper<IStmt> exeStackWrapper = new MyIStackWrapper<>(exeStk);
-            return exeStackWrapper.getObservableStack();
+            exeStackListData.setAll(exeStk.getInOrderStmts());
         }
-        return javafx.collections.FXCollections.observableArrayList();
+        throw new MyException("Program is finished");
     }
 
-    private ObservableList<Integer> getPrgStateIDsList() {
-        return javafx.collections.FXCollections.observableArrayList(service.getPrgIds());
+    private void refreshPrgStateIDsList() {
+        prgStateIDsListData.setAll(service.getPrgIds());
     }
 
-    protected void updatePrgStatesNumberTxt(){
+    private void refreshOutList() {
+        outListData.setAll(service.getOutList().getList());
+    }
+
+    private void refreshFileTableList() {
+        fileTableListData.setAll(service.getFilesKeys());
+    }
+
+    protected void refreshPrgStatesNumberTxt(){
         int size = service.getRepo().getSize();
         prgStatesNumberTxt.setText(String.valueOf(size));
+    }
+
+    private void initializeHeapTableView(){
+        heapAddressColumn.setCellValueFactory(cellData ->{
+            AtomicIntegerKey key = cellData.getValue().getKey();
+            return new SimpleStringProperty(String.valueOf(key.get()));
+        });
+
+        heapValueColumn.setCellValueFactory(cellData -> {
+            Value value = cellData.getValue().getValue();
+            return new SimpleStringProperty(value.toString());
+        });
+    }
+
+    private void initializeSymbolTableView(){
+        symbolNameColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getKey()));
+        symbolValueColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getValue().toString()));
+    }
+
+    private void refreshHeapTable() {
+        heapTableData.setAll(service.getHeapEntry());
+    }
+
+    private void refreshSymbolTable() throws MyException {
+        if (service.getPrgIds().contains(currentProgramStateID)) {
+            MyIDictionary<String, Value> symTbl = service.getRepo().getPrgState(currentProgramStateID).getSymTable();
+            symbolTableData.setAll(symTbl.entrySet());
+        }
+        throw new MyException("Prg is finished");
     }
 }

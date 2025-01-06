@@ -5,10 +5,7 @@ import interpreter.toylanguageinterpreter.Repository.IRepository;
 import interpreter.toylanguageinterpreter.Utils.*;
 import interpreter.toylanguageinterpreter.Model.PrgState;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
 
@@ -141,4 +138,17 @@ public class Service {
 
         repo.setPrgList(prgList);
     }
+
+    public MyIList<Value> getOutList() {
+        return getRepo().getPrgList().getFirst().getOut();
+    }
+
+    public Set<String> getFilesKeys() {
+        return getRepo().getPrgList().getFirst().getFileTable().keySet();
+    }
+
+    public Set<Map.Entry<AtomicIntegerKey, Value>> getHeapEntry() {
+        return getRepo().getPrgList().getFirst().getHeapTable().entrySet();
+    }
+
 }
