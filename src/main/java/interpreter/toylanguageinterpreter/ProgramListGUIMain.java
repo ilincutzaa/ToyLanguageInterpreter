@@ -15,7 +15,7 @@ public class ProgramListGUIMain extends Application {
     public void start(Stage primaryStage){
         try{
             FXMLLoader fxmlLoader = new FXMLLoader(ProgramListGUIMain.class.getResource("ProgramListGUI.fxml"));
-            String logFilePath = "D:\\Java projects\\ToyLanguageInterpreter\\src\\main\\java\\interpreter\\toylanguageinterpreter\\log.txt";
+            String logFilePath = "src/main/java/interpreter/toylanguageinterpreter/log.txt";
             try {
                 FileWriter fileWriter = new FileWriter(logFilePath, false);
                 fileWriter.close();

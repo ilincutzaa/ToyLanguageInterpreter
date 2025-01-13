@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="638.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interpreter.toylanguageinterpreter.ProgramStateGUIController">
+<AnchorPane prefHeight="638.0" prefWidth="869.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interpreter.toylanguageinterpreter.ProgramStateGUIController">
    <children>
       <SplitPane dividerPositions="0.5, 0.5" layoutX="-0.5" orientation="VERTICAL" prefHeight="640.8" prefWidth="874.7" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <items>

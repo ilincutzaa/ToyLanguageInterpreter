@@ -18,7 +18,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
-import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.stage.Stage;
@@ -117,7 +116,7 @@ public class ProgramListGUIController {
         //readFile(varf,varc);print(varc)
         //closeRFile(varf)
         IStmt ex4 = new CompStmt(new VarDeclStmt("varf", new StringType()),
-                new CompStmt(new AssignStmt("varf", new ValueExp(new StringValue("D:\\Java projects\\ToyLanguageInterpreter\\src\\main\\java\\interpreter\\toylanguageinterpreter\\test.in"))),
+                new CompStmt(new AssignStmt("varf", new ValueExp(new StringValue("src/main/java/interpreter/toylanguageinterpreter/test.in"))),
                         new CompStmt(new OpenRFile(new VarExp("varf")),
                                 new CompStmt(new VarDeclStmt("varc", new IntType()),
                                         new CompStmt(new ReadFile(new VarExp("varf"), "varc"),
@@ -204,8 +203,7 @@ public class ProgramListGUIController {
         IStmt ex14= new CompStmt(new VarDeclStmt("v",new IntType()),
                 new CompStmt(new AssignStmt("v",new ValueExp(new StringValue("five"))), new PrintStmt(new VarExp("v"))));
 
-        ObservableList<IStmt> programList = FXCollections.observableArrayList(ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, ex11, ex12, ex13, ex14);
-        return programList;
+        return FXCollections.observableArrayList(ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, ex11, ex12, ex13, ex14);
     }
 
 }
