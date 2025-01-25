@@ -120,7 +120,7 @@ public class Service {
 
         if(prgList.isEmpty()) {
             executor.shutdownNow();
-            throw new MyException("No more prg states to run. Program has finished.");
+            throw new MyException("Program is finished");
         }
         MyIDictionary<String, Value> globalSymTable = new MyDictionary<>();
 
