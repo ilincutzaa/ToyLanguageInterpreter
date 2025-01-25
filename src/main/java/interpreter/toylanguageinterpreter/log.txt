@@ -2,7 +2,7 @@
 Program Id: 0
 ExeStack:
 string varf
-varf = src/main/java/interpreter/toylanguageinterpreter/test.in
+varf = src/main/java/interpreter/toylanguageinterpreter/test1.in
 OpenRFile(varf)
 int varc
 ReadFile(varf,varc)
@@ -24,7 +24,7 @@ HeapTable:
 Program Id: 0
 ExeStack:
 string varf
-varf = src/main/java/interpreter/toylanguageinterpreter/test.in
+varf = src/main/java/interpreter/toylanguageinterpreter/test1.in
 OpenRFile(varf)
 int varc
 ReadFile(varf,varc)
@@ -46,7 +46,7 @@ HeapTable:
 Program Id: 0
 ExeStack:
 string varf
-varf = src/main/java/interpreter/toylanguageinterpreter/test.in
+varf = src/main/java/interpreter/toylanguageinterpreter/test1.in
 OpenRFile(varf)
 int varc
 ReadFile(varf,varc)
@@ -67,29 +67,7 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-varf = src/main/java/interpreter/toylanguageinterpreter/test.in
-OpenRFile(varf)
-int varc
-ReadFile(varf,varc)
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> 
-
-Out:
-
-FileTable:
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-varf = src/main/java/interpreter/toylanguageinterpreter/test.in
+varf = src/main/java/interpreter/toylanguageinterpreter/test1.in
 OpenRFile(varf)
 int varc
 ReadFile(varf,varc)
@@ -111,7 +89,7 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-varf = src/main/java/interpreter/toylanguageinterpreter/test.in
+varf = src/main/java/interpreter/toylanguageinterpreter/test1.in
 OpenRFile(varf)
 int varc
 ReadFile(varf,varc)
@@ -133,7 +111,29 @@ HeapTable:
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
-varf = src/main/java/interpreter/toylanguageinterpreter/test.in
+varf = src/main/java/interpreter/toylanguageinterpreter/test1.in
+OpenRFile(varf)
+int varc
+ReadFile(varf,varc)
+Print(varc)
+ReadFile(varf,varc)
+Print(varc)
+CloseRFile(varf)
+
+SymTable:
+varf --> 
+
+Out:
+
+FileTable:
+
+HeapTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+varf = src/main/java/interpreter/toylanguageinterpreter/test1.in
 OpenRFile(varf)
 int varc
 ReadFile(varf,varc)
@@ -164,7 +164,7 @@ Print(varc)
 CloseRFile(varf)
 
 SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
+varf --> src/main/java/interpreter/toylanguageinterpreter/test1.in
 
 Out:
 
@@ -185,7 +185,7 @@ Print(varc)
 CloseRFile(varf)
 
 SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
+varf --> src/main/java/interpreter/toylanguageinterpreter/test1.in
 
 Out:
 
@@ -206,7 +206,7 @@ Print(varc)
 CloseRFile(varf)
 
 SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
+varf --> src/main/java/interpreter/toylanguageinterpreter/test1.in
 
 Out:
 
@@ -227,468 +227,9 @@ Print(varc)
 CloseRFile(varf)
 
 SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
+varf --> src/main/java/interpreter/toylanguageinterpreter/test1.in
 
 Out:
-
-FileTable:
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-int varc
-ReadFile(varf,varc)
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-int varc
-ReadFile(varf,varc)
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-int varc
-ReadFile(varf,varc)
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-int varc
-ReadFile(varf,varc)
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-ReadFile(varf,varc)
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 0
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-ReadFile(varf,varc)
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 0
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-ReadFile(varf,varc)
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 0
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-ReadFile(varf,varc)
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 0
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 15
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 15
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 15
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-Print(varc)
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 15
-
-Out:
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 15
-
-Out:
-15
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 15
-
-Out:
-15
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 15
-
-Out:
-15
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-ReadFile(varf,varc)
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 15
-
-Out:
-15
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 2
-
-Out:
-15
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 2
-
-Out:
-15
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 2
-
-Out:
-15
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-Print(varc)
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 2
-
-Out:
-15
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 2
-
-Out:
-15
-2
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-CloseRFile(varf)
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 2
-
-Out:
-15
-2
-
-FileTable:
-src/main/java/interpreter/toylanguageinterpreter/test.in --> java.io.BufferedReader@13b46d8b
-
-HeapTable:
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-
-SymTable:
-varf --> src/main/java/interpreter/toylanguageinterpreter/test.in
-varc --> 2
-
-Out:
-15
-2
 
 FileTable:
 

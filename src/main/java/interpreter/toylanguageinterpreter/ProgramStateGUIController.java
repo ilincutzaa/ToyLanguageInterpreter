@@ -92,14 +92,18 @@ public class ProgramStateGUIController {
         try {
             refreshExeStackList();
         } catch (MyException e) {
-            if(!e.getMessage().equals("Program is finished"))
+            if(!e.getMessage().equals("Program is finished")) {
                 e.printStackTrace();
+                errorAlert(e.getMessage());
+            }
         }
         try {
             refreshSymbolTable();
         } catch (MyException e) {
-            if(!e.getMessage().equals("Program is finished"))
+            if(!e.getMessage().equals("Program is finished")) {
                 e.printStackTrace();
+                errorAlert(e.getMessage());
+            }
         }
     }
 
@@ -108,8 +112,10 @@ public class ProgramStateGUIController {
         try {
             refreshExeStackList();
         } catch (MyException e) {
-            if(!e.getMessage().equals("Program is finished"))
+            if(!e.getMessage().equals("Program is finished")) {
                 e.printStackTrace();
+                errorAlert(e.getMessage());
+            }
         }
         refreshPrgStateIDsList();
         refreshOutList();
@@ -118,9 +124,18 @@ public class ProgramStateGUIController {
         try {
             refreshSymbolTable();
         } catch (MyException e) {
-            if(!e.getMessage().equals("Program is finished"))
+            if(!e.getMessage().equals("Program is finished")) {
                 e.printStackTrace();
+                errorAlert(e.getMessage());
+            }
         }
+    }
+
+    private void errorAlert(String message) {
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("Error");
+        alert.setContentText(message);
+        alert.showAndWait();
     }
 
     @FXML
@@ -130,6 +145,9 @@ public class ProgramStateGUIController {
             refreshGUI();
         } catch (MyException e) {
             runOneStepButton.setDisable(true);
+            if(!e.getMessage().equals("Program is finished")) {
+                errorAlert(e.getMessage());
+            }
         }
     }
 

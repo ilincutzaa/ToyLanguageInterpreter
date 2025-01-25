@@ -25,7 +25,7 @@ public class Service {
                 .collect(Collectors.toList());
     }
 
-    private void oneStepForAllPrg(List<PrgState> prgList) throws InterruptedException {
+    private void oneStepForAllPrg(List<PrgState> prgList) throws InterruptedException, MyException {
         prgList.forEach(prg -> repo.logPrgStateExec(prg));
         List<Callable<PrgState>> callList = prgList.stream()
                 .map((PrgState p) -> (Callable<PrgState>) (() -> p.oneStep()))
@@ -35,7 +35,7 @@ public class Service {
                     {
                         try{
                         return future.get();
-                        } catch (InterruptedException | ExecutionException e) {
+                        } catch (InterruptedException | ExecutionException | MyException e) {
                             throw new MyException(e.getMessage());
                         }
                     })
@@ -61,7 +61,7 @@ public class Service {
             heap.setContent(GarbageCollector(getAllAddr(globalSymTable.values(), heap), heap));
             try {
                 oneStepForAllPrg(prgList);
-            } catch (InterruptedException e) {
+            } catch (InterruptedException | MyException e) {
                 throw new MyException(e.getMessage());
             }
             prgList = removeCompletedPrg(repo.getPrgList());
@@ -132,7 +132,7 @@ public class Service {
 
         try {
             oneStepForAllPrg(prgList);
-        } catch (InterruptedException e) {
+        } catch (InterruptedException | MyException e) {
             throw new MyException(e.getMessage());
         }
 
