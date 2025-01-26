@@ -33,7 +33,7 @@ public class ReadHeap implements Exp{
 
     @Override
     public Exp deepCopy() {
-        return exp.deepCopy();
+        return new ReadHeap(exp.deepCopy());
     }
 
     @Override
