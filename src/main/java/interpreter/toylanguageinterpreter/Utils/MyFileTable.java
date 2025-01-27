@@ -4,13 +4,14 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class MyFileTable<K,V> implements MyIFileTable<K,V>{
 
-    private final Map<K,V> table;
+    private final ConcurrentHashMap<K,V> table;
 
     public MyFileTable(){
-        table = new HashMap<>();
+        table = new ConcurrentHashMap<>();
     }
 
     @Override
