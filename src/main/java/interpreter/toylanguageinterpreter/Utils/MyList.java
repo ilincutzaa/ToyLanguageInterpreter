@@ -22,4 +22,19 @@ public class MyList<T> implements MyIList<T>{
     public List<T> getList(){
         return list;
     }
+
+    @Override
+    public boolean contains(T t) {
+        return list.contains(t);
+    }
+
+    @Override
+    public void remove(T t) {
+        list.remove(t);
+    }
+
+    @Override
+    public int size() {
+        return list.size();
+    }
 }

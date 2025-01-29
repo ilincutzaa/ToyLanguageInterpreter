@@ -31,8 +31,17 @@ public class IntValue implements Value {
     }
 
     @Override
+    public int hashCode() {
+        return Integer.hashCode(val);
+    }
+
+    @Override
     public boolean equals(Object obj) {
         return obj instanceof IntValue && val == ((IntValue) obj).val;
+    }
+
+    public int compare(IntValue o) {
+        return Integer.compare(this.val, o.val);
     }
 }
 
