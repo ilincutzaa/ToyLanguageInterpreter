@@ -1,4 +1,5 @@
 package interpreter.toylanguageinterpreter.Service;
+import interpreter.toylanguageinterpreter.Model.Value.IntValue;
 import interpreter.toylanguageinterpreter.Model.Value.RefValue;
 import interpreter.toylanguageinterpreter.Model.Value.Value;
 import interpreter.toylanguageinterpreter.Repository.IRepository;
@@ -149,6 +150,10 @@ public class Service {
 
     public Set<Map.Entry<AtomicIntegerKey, Value>> getHeapEntry() {
         return getRepo().getPrgList().getFirst().getHeapTable().entrySet();
+    }
+
+    public Set<Map.Entry<IntValue, IntValue>> getLatchEntry() {
+        return getRepo().getPrgList().getFirst().getLatchTable().entrySet();
     }
 
     public PrgState getPrgState(int id) throws MyException{

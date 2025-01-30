@@ -1,5 +1,6 @@
 package interpreter.toylanguageinterpreter.TextMenu.Command;
 
+import interpreter.toylanguageinterpreter.Model.Value.IntValue;
 import interpreter.toylanguageinterpreter.Service.Service;
 import interpreter.toylanguageinterpreter.Model.PrgState;
 import interpreter.toylanguageinterpreter.Model.Statement.IStmt;
@@ -24,7 +25,8 @@ public class RunExample extends Command {
             MyIList<Value> output = new MyList<>();
             MyIFileTable<String, BufferedReader> filetbl = new MyFileTable<>();
             MyIHeap<Value> heap = new MyHeap<>();
-            PrgState prgState = new PrgState(stack, symtbl, output, prg, filetbl, heap);
+            MyICountDownLatch<IntValue> latchtbl = new MyCountDownLatch<>();
+            PrgState prgState = new PrgState(stack, symtbl, output, prg, filetbl, heap, latchtbl);
             IRepository<PrgState> repo = new Repository<PrgState>(logFilePath);
             repo.add(prgState);
             this.ctr = new Service(repo);

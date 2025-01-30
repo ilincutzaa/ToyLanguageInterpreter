@@ -16,6 +16,7 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.PerspectiveCamera;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ListView;
@@ -47,7 +48,8 @@ public class ProgramListGUIController {
             MyIList<Value> output = new MyList<>();
             MyIFileTable<String, BufferedReader> filetbl = new MyFileTable<>();
             MyIHeap<Value> heap = new MyHeap<>();
-            PrgState prgState = new PrgState(stack, symtbl, output, prg, filetbl, heap);
+            MyICountDownLatch<IntValue> latchtbl = new MyCountDownLatch<>();
+            PrgState prgState = new PrgState(stack, symtbl, output, prg, filetbl, heap, latchtbl);
             IRepository<PrgState> repo = new Repository<>(logFilePath);
             repo.add(prgState);
             Service serv = new Service(repo);
@@ -222,7 +224,47 @@ public class ProgramListGUIController {
                                                                                 new CompStmt(new CondAssignStmt("v", new RelExp(new ArithExp('-', new ReadHeap(new VarExp("b")),new ValueExp(new IntValue(2))),new ReadHeap(new VarExp("a")),">"),new ValueExp(new IntValue(100)),new ValueExp(new IntValue(200))),
                                                                                         new PrintStmt(new VarExp("v"))))))))))));
 
-        return FXCollections.observableArrayList(ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, ex11, ex12, ex13, ex14, ex15);
+        //Ref int v1; Ref int v2; Ref int v3; int cnt;
+        //new(v1,2);new(v2,3);new(v3,4);newLatch(cnt,rH(v2));
+        //fork(
+            //wh(v1,rh(v1)*10);print(rh(v1));countDown(cnt);
+            //fork(
+                //wh(v2,rh(v2)*10);print(rh(v2));countDown(cnt);
+                //fork(wh(v3,rh(v3)*10);print(rh(v3));countDown(cnt))
+            //)
+        //);
+        //await(cnt);
+        //print(100);
+        //countDown(cnt);
+        //print(100)
+
+        IStmt ex16 = new CompStmt(new VarDeclStmt("v1", new RefType(new IntType())),
+                new CompStmt(new VarDeclStmt("v2", new RefType(new IntType())),
+                        new CompStmt(new VarDeclStmt("v3", new RefType(new IntType())),
+                                new CompStmt(new VarDeclStmt("cnt", new IntType()),
+                                        new CompStmt(new AllocStmt("v1", new ValueExp(new IntValue(2))),
+                                                new CompStmt(new AllocStmt("v2", new ValueExp(new IntValue(3))),
+                                                        new CompStmt(new AllocStmt("v3", new ValueExp(new IntValue(4))),
+                                                                new CompStmt(new CreateLatchStmt("cnt", new ReadHeap(new VarExp("v2"))),
+                                                                        new CompStmt(new ForkStmt(
+                                                                                new CompStmt(new WriteHeap("v1", new ArithExp('*', new ReadHeap(new VarExp("v1")),new ValueExp(new IntValue(10)))),
+                                                                                        new CompStmt(new PrintStmt(new ReadHeap(new VarExp("v1"))),
+                                                                                                new CompStmt(new CountDownStmt("cnt"),
+                                                                                                        new ForkStmt(
+                                                                                                                new CompStmt(new WriteHeap("v2", new ArithExp('*', new ReadHeap(new VarExp("v2")),new ValueExp(new IntValue(10)))),
+                                                                                                                        new CompStmt(new PrintStmt(new ReadHeap(new VarExp("v2"))),
+                                                                                                                                new CompStmt(new CountDownStmt("cnt"),
+                                                                                                                                        new ForkStmt(
+                                                                                                                                                new CompStmt(new WriteHeap("v3", new ArithExp('*', new ReadHeap(new VarExp("v3")),new ValueExp(new IntValue(10)))),
+                                                                                                                                                        new CompStmt(new PrintStmt(new ReadHeap(new VarExp("v3"))), new CountDownStmt("cnt")))))
+                                                                                                                                        ))
+                                                                                                        ))))
+                                                                        ),
+                                                                                new CompStmt(new AwaitStmt("cnt"),
+                                                                                        new CompStmt(new PrintStmt(new ValueExp(new IntValue(100))),
+                                                                                                new CompStmt(new CountDownStmt("cnt"), new PrintStmt(new ValueExp(new IntValue(100)))))))))))))));
+
+        return FXCollections.observableArrayList(ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, ex11, ex12, ex13, ex14, ex15, ex16);
     }
 
 }

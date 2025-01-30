@@ -1,6 +1,7 @@
 package interpreter.toylanguageinterpreter;
 
 import interpreter.toylanguageinterpreter.Model.Statement.IStmt;
+import interpreter.toylanguageinterpreter.Model.Value.IntValue;
 import interpreter.toylanguageinterpreter.Model.Value.Value;
 import interpreter.toylanguageinterpreter.Service.Service;
 import interpreter.toylanguageinterpreter.Utils.*;
@@ -42,6 +43,14 @@ public class ProgramStateGUIController {
     @FXML
     public ListView<IStmt> exeStackListView;
 
+    @FXML
+    public TableView<Map.Entry<IntValue, IntValue>> latchTableView;
+    @FXML
+    public TableColumn<Map.Entry<IntValue, IntValue>, String> latchLocColumn;
+    @FXML
+    public TableColumn<Map.Entry<IntValue, IntValue>, String> latchValColumn;
+
+
 
     @FXML
     public Button runOneStepButton;
@@ -65,6 +74,7 @@ public class ProgramStateGUIController {
     private final ObservableList<Value> outListData = FXCollections.observableArrayList();
     private final ObservableList<String> fileTableListData = FXCollections.observableArrayList();
     private final ObservableList<Map.Entry<AtomicIntegerKey, Value>> heapTableData = FXCollections.observableArrayList();
+    private final ObservableList<Map.Entry<IntValue, IntValue>> latchTableData = FXCollections.observableArrayList();
 
     private Integer selectedProgramStateID;
 
@@ -78,6 +88,9 @@ public class ProgramStateGUIController {
         symbolTableView.setItems(symbolTableData);
         initializeHeapTableView();
         initializeSymbolTableView();
+
+        latchTableView.setItems(latchTableData);
+        initializeLatchTableView();
 
         prgStateIDsListView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> {
             if (newValue != null) {
@@ -121,6 +134,7 @@ public class ProgramStateGUIController {
         refreshOutList();
         refreshFileTableList();
         refreshHeapTable();
+        refreshLatchTable();
         try {
             refreshSymbolTable();
         } catch (MyException e) {
@@ -208,5 +222,21 @@ public class ProgramStateGUIController {
         }
         else
             throw new MyException("Program is finished");
+    }
+
+    private void initializeLatchTableView(){
+        latchLocColumn.setCellValueFactory(cellData ->{
+            IntValue key = cellData.getValue().getKey();
+            return new SimpleStringProperty(String.valueOf(key));
+        });
+
+        latchValColumn.setCellValueFactory(cellData -> {
+            Value value = cellData.getValue().getValue();
+            return new SimpleStringProperty(value.toString());
+        });
+    }
+
+    private void refreshLatchTable() {
+        latchTableData.setAll(service.getLatchEntry());
     }
 }

@@ -1,6 +1,4033 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 Program Id: 0
 ExeStack:
+Ref(int) v1
+Ref(int) v2
+Ref(int) v3
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v1
+Ref(int) v2
+Ref(int) v3
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v1
+Ref(int) v2
+Ref(int) v3
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v2
+Ref(int) v3
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v2
+Ref(int) v3
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v2
+Ref(int) v3
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v2
+Ref(int) v3
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v3
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v3
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v3
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Ref(int) v3
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+int cnt
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v1, 2)
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=0, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v2, 3)
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=0, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+new(v3, 4)
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=0, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+newLatch(cnt,rH(v2))
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 0
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+fork(WriteHeap(v1, rH(v1) * 10);
+Print(rH(v1));
+countDown(cnt);
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))))
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(v1, rH(v1) * 10)
+Print(rH(v1))
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(v1, rH(v1) * 10)
+Print(rH(v1))
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(v1, rH(v1) * 10)
+Print(rH(v1))
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+WriteHeap(v1, rH(v1) * 10)
+Print(rH(v1))
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 2
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(v1))
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(v1))
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(v1))
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+Print(rH(v1))
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+countDown(cnt)
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 3
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+fork(WriteHeap(v2, rH(v2) * 10);
+Print(rH(v2));
+countDown(cnt);
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt)))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 1
+ExeStack:
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+WriteHeap(v2, rH(v2) * 10)
+Print(rH(v2))
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+WriteHeap(v2, rH(v2) * 10)
+Print(rH(v2))
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+WriteHeap(v2, rH(v2) * 10)
+Print(rH(v2))
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+WriteHeap(v2, rH(v2) * 10)
+Print(rH(v2))
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 3
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+Print(rH(v2))
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+Print(rH(v2))
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+Print(rH(v2))
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+Print(rH(v2))
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+countDown(cnt)
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 2
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+fork(WriteHeap(v3, rH(v3) * 10);
+Print(rH(v3));
+countDown(cnt))
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 2
+ExeStack:
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 3
+ExeStack:
+WriteHeap(v3, rH(v3) * 10)
+Print(rH(v3))
+countDown(cnt)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 3
+ExeStack:
+WriteHeap(v3, rH(v3) * 10)
+Print(rH(v3))
+countDown(cnt)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 3
+ExeStack:
+WriteHeap(v3, rH(v3) * 10)
+Print(rH(v3))
+countDown(cnt)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 3
+ExeStack:
+WriteHeap(v3, rH(v3) * 10)
+Print(rH(v3))
+countDown(cnt)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 4
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 3
+ExeStack:
+Print(rH(v3))
+countDown(cnt)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 3
+ExeStack:
+Print(rH(v3))
+countDown(cnt)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 3
+ExeStack:
+Print(rH(v3))
+countDown(cnt)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 3
+ExeStack:
+Print(rH(v3))
+countDown(cnt)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 3
+ExeStack:
+countDown(cnt)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 3
+ExeStack:
+countDown(cnt)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 1
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 3
+ExeStack:
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+await(cnt)
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(100)
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+100
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+100
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+100
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+countDown(cnt)
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+100
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+100
+0
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+Print(100)
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+100
+0
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 0
+ExeStack:
+
+SymTable:
+cnt --> 1
+v1 --> RefValue{address=1, locationType=int}
+v2 --> RefValue{address=2, locationType=int}
+v3 --> RefValue{address=3, locationType=int}
+
+Out:
+20
+1
+30
+2
+40
+3
+100
+0
+100
+
+FileTable:
+
+HeapTable:
+1 --> 20
+2 --> 30
+3 --> 40
+
+LatchTable:
+1 --> 0
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 4
+ExeStack:
 Ref(int) a
 Ref(int) b
 int v
@@ -20,10 +4047,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Ref(int) a
 Ref(int) b
@@ -44,10 +4073,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Ref(int) a
 Ref(int) b
@@ -68,10 +4099,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Ref(int) b
 int v
@@ -92,10 +4125,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Ref(int) b
 int v
@@ -116,10 +4151,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Ref(int) b
 int v
@@ -140,10 +4177,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Ref(int) b
 int v
@@ -164,10 +4203,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 int v
 new(a, 0)
@@ -188,10 +4229,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 int v
 new(a, 0)
@@ -212,10 +4255,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 int v
 new(a, 0)
@@ -236,10 +4281,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 int v
 new(a, 0)
@@ -260,10 +4307,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 new(a, 0)
 new(b, 0)
@@ -284,10 +4333,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 new(a, 0)
 new(b, 0)
@@ -308,10 +4359,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 new(a, 0)
 new(b, 0)
@@ -332,10 +4385,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 new(a, 0)
 new(b, 0)
@@ -356,10 +4411,12 @@ Out:
 FileTable:
 
 HeapTable:
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 new(b, 0)
 WriteHeap(a, 1)
@@ -380,10 +4437,12 @@ FileTable:
 
 HeapTable:
 1 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 new(b, 0)
 WriteHeap(a, 1)
@@ -404,10 +4463,12 @@ FileTable:
 
 HeapTable:
 1 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 new(b, 0)
 WriteHeap(a, 1)
@@ -428,10 +4489,12 @@ FileTable:
 
 HeapTable:
 1 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 new(b, 0)
 WriteHeap(a, 1)
@@ -452,10 +4515,12 @@ FileTable:
 
 HeapTable:
 1 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 WriteHeap(a, 1)
 WriteHeap(b, 2)
@@ -476,10 +4541,12 @@ FileTable:
 HeapTable:
 1 --> 0
 2 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 WriteHeap(a, 1)
 WriteHeap(b, 2)
@@ -500,10 +4567,12 @@ FileTable:
 HeapTable:
 1 --> 0
 2 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 WriteHeap(a, 1)
 WriteHeap(b, 2)
@@ -524,10 +4593,12 @@ FileTable:
 HeapTable:
 1 --> 0
 2 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 WriteHeap(a, 1)
 WriteHeap(b, 2)
@@ -548,10 +4619,12 @@ FileTable:
 HeapTable:
 1 --> 0
 2 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 WriteHeap(b, 2)
 v=rH(a) < rH(b)?100:200
@@ -571,10 +4644,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 WriteHeap(b, 2)
 v=rH(a) < rH(b)?100:200
@@ -594,10 +4669,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 WriteHeap(b, 2)
 v=rH(a) < rH(b)?100:200
@@ -617,10 +4694,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 WriteHeap(b, 2)
 v=rH(a) < rH(b)?100:200
@@ -640,10 +4719,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 0
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 v=rH(a) < rH(b)?100:200
 Print(v)
@@ -662,10 +4743,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 v=rH(a) < rH(b)?100:200
 Print(v)
@@ -684,10 +4767,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 v=rH(a) < rH(b)?100:200
 Print(v)
@@ -706,10 +4791,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 v=rH(a) < rH(b)?100:200
 Print(v)
@@ -728,10 +4815,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 IF(rH(a) < rH(b)) THEN(v = 100) ELSE(v = 200)
 Print(v)
@@ -750,10 +4839,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 IF(rH(a) < rH(b)) THEN(v = 100) ELSE(v = 200)
 Print(v)
@@ -772,10 +4863,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 v = 100
 Print(v)
@@ -794,10 +4887,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 v = 100
 Print(v)
@@ -816,10 +4911,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Print(v)
 v=rH(b) - 2 > rH(a)?100:200
@@ -837,10 +4934,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Print(v)
 v=rH(b) - 2 > rH(a)?100:200
@@ -858,10 +4957,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Print(v)
 v=rH(b) - 2 > rH(a)?100:200
@@ -879,10 +4980,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Print(v)
 v=rH(b) - 2 > rH(a)?100:200
@@ -900,31 +5003,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
-ExeStack:
-v=rH(b) - 2 > rH(a)?100:200
-Print(v)
-
-SymTable:
-a --> RefValue{address=1, locationType=int}
-b --> RefValue{address=2, locationType=int}
-v --> 100
-
-Out:
-100
-
-FileTable:
-
-HeapTable:
-1 --> 1
-2 --> 2
-~~~~~~~~~~~~~~~~~~~~~
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 v=rH(b) - 2 > rH(a)?100:200
 Print(v)
@@ -942,10 +5026,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 v=rH(b) - 2 > rH(a)?100:200
 Print(v)
@@ -963,10 +5049,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 v=rH(b) - 2 > rH(a)?100:200
 Print(v)
@@ -984,10 +5072,35 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
+ExeStack:
+v=rH(b) - 2 > rH(a)?100:200
+Print(v)
+
+SymTable:
+a --> RefValue{address=1, locationType=int}
+b --> RefValue{address=2, locationType=int}
+v --> 100
+
+Out:
+100
+
+FileTable:
+
+HeapTable:
+1 --> 1
+2 --> 2
+
+LatchTable:
+~~~~~~~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Program Id: 4
 ExeStack:
 IF(rH(b) - 2 > rH(a)) THEN(v = 100) ELSE(v = 200)
 Print(v)
@@ -1005,10 +5118,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 IF(rH(b) - 2 > rH(a)) THEN(v = 100) ELSE(v = 200)
 Print(v)
@@ -1026,10 +5141,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 v = 200
 Print(v)
@@ -1047,10 +5164,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 v = 200
 Print(v)
@@ -1068,10 +5187,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Print(v)
 
@@ -1088,10 +5209,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 Print(v)
 
@@ -1108,10 +5231,12 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-Program Id: 0
+Program Id: 4
 ExeStack:
 
 SymTable:
@@ -1128,5 +5253,7 @@ FileTable:
 HeapTable:
 1 --> 1
 2 --> 2
+
+LatchTable:
 ~~~~~~~~~~~~~~~~~~~~~
 
