@@ -203,7 +203,26 @@ public class ProgramListGUIController {
         IStmt ex14= new CompStmt(new VarDeclStmt("v",new IntType()),
                 new CompStmt(new AssignStmt("v",new ValueExp(new StringValue("five"))), new PrintStmt(new VarExp("v"))));
 
-        return FXCollections.observableArrayList(ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, ex11, ex12, ex13, ex14);
+        //Ref int a; Ref int b; int v;
+        //new(a,0); new(b,0);
+        //wh(a,1); wh(b,2);
+        //v=(rh(a)<rh(b))?100:200;
+        //print(v);
+        //v= ((rh(b)-2)>rh(a))?100:200;
+        //print(v);
+        IStmt ex15 = new CompStmt(new VarDeclStmt("a", new RefType(new IntType())),
+                new CompStmt(new VarDeclStmt("b", new RefType(new IntType())),
+                        new CompStmt(new VarDeclStmt("v", new IntType()),
+                                new CompStmt(new AllocStmt("a", new ValueExp(new IntValue(0))),
+                                        new CompStmt(new AllocStmt("b", new ValueExp(new IntValue(0))),
+                                                new CompStmt(new WriteHeap("a", new ValueExp(new IntValue(1))),
+                                                        new CompStmt(new WriteHeap("b", new ValueExp(new IntValue(2))),
+                                                                new CompStmt(new CondAssignStmt("v", new RelExp(new ReadHeap(new VarExp("a")),new ReadHeap(new VarExp("b")),"<"),new ValueExp(new IntValue(100)),new ValueExp(new IntValue(200))),
+                                                                        new CompStmt(new PrintStmt(new VarExp("v")),
+                                                                                new CompStmt(new CondAssignStmt("v", new RelExp(new ArithExp('-', new ReadHeap(new VarExp("b")),new ValueExp(new IntValue(2))),new ReadHeap(new VarExp("a")),">"),new ValueExp(new IntValue(100)),new ValueExp(new IntValue(200))),
+                                                                                        new PrintStmt(new VarExp("v"))))))))))));
+
+        return FXCollections.observableArrayList(ex1, ex2, ex3, ex4, ex5, ex6, ex7, ex8, ex9, ex10, ex11, ex12, ex13, ex14, ex15);
     }
 
 }
